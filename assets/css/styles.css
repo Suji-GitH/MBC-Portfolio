@@ -12,9 +12,9 @@ body {
 #logo {
 font-family: 'Lobster', cursive;
 
-  /* Typography */
-  font-size: 24px;
-  color: orange;
+/* Typography */
+font-size: 24px;
+color: orange;
 }
 
 /* override bootstrap hover color and border */
@@ -22,28 +22,19 @@ font-family: 'Lobster', cursive;
   color: orange;
 }
 
-
-/* CONNECT W/ ME CSS */
-.connect-header {
-  /* Typography */
-  font-size: 25px;
+/* Header and General Typography  */
+.page-header h1, p {
+  font-weight: bold;
 }
 
-.connect-photo {
-  /* Box-model */
-  width: 55px;
-  height: 55px;
+/* Container CSS */
+.container {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding: 50px;
+  background: rgba(116, 115, 113, 0.438);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
-
-#images {
-  /* Box-model */
-  padding-top: 15px;
-
-  /* Typography */
-  text-align: center;
-}
-/* END CONNECT W/ ME */
-
 
 /* BEGIN FOOTER */
 footer {
@@ -54,7 +45,7 @@ footer {
 
   /* Footer Size */
   width: 100vw;
-  height: 30px;
+  height: 40px;
 
   /* Visual */
   background-color: #343a40;
@@ -62,60 +53,53 @@ footer {
   text-align: center;
 }
 
+/* Footer content padding */
+footer p{
+  padding: 10px;
+}
+
 /* END FOOTER */
-/* --- END STYLES FOR ALL PAGES --- */
+
 
 /* --- PAGE-SPECIFIC STYLES --- */
 
-/* ABOUT-ME PAGE */
-.container {
-  margin-top: 50px;
-  margin-bottom: 150px;
-  padding: 50px;
-  background: rgba(116, 115, 113, 0.438);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-}
+/* PORTFOLIO PAGE */
 
-.page-header h1, p {
+/* Card Heading color */
+.card-body .card-title {
+  color: orange;
   font-weight: bold;
 }
 
-/* END ABOUT-ME PAGE */
-
-
-/* PORTFOLIO PAGE */
-.port-image {
-  margin: 20px auto;
+.card-body:hover{
+  background-color: #343a40;
+  color: #fff;
 }
-/* END PORTFOLIO PAGE */
-
 
 /* CONTACT FORM PAGE  */
-.form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
 
-  /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
+/* Contact Field links */
+.container a{
+  font-weight: bold;
+  color: black;
 }
 
-.submit-btn {
-  /* Box-model */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: lighter;
-
-  /* Typography */
-  color: #fff;
-
-  /* Visual */
-  background-color: #4aaaa5;
-  border: 0;
+/* Contact Field box */
+.container .form-control:focus {
+  background-color: orange;
+  color: black;
+  font-weight: 600;
 }
 
-.submit-btn:hover {
+/* Button Position */
+.container .btn{
+  float: right;
+}
+
+/* Button effect */
+.container .btn:hover {
   opacity: .7;
+  color: orange;
 }
 
-/* END CONTACT FORM PAGE */
+
