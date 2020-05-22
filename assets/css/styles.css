@@ -3,7 +3,7 @@ body {
   /* Typography */
   font-family: 'Poiret One', cursive;
 
-  background: url('./assets/img/rbw_cable.jpg');
+  background: url("../assets/img/rbw_cable.jpg");
   background-size: 100%;
 
 }
